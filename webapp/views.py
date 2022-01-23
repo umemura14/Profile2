@@ -1,7 +1,6 @@
 from re import template
 from django import views
 from django.shortcuts import render
-from numpy import generic
 from django.views.generic import TemplateView
 
 # Create your views here.
