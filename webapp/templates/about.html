@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>[自己紹介]</h1>
+<p>...梅村潤也</p>
+<p>...27歳</p>
+<p>...etc</p>
+<h2>[実績]</h2>
+<p>...{{ time }}~某SESにて、顧客管理システムの開発に参画。</p>
+<p>...現在も参画中。Pythonを主に勉強中。</p>
+<h2>[スキル]</h2>
+<ul>
+    {% for skill in skills %}
+    <li>{{ skill }}</li>
+    {% empty %}
+    スキルがありません。
+    {% endfor %}
+</ul>
+{% endblock %}
